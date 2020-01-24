@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ font-family: "Heebo";
+//  border: 1px solid blue;
+//  font-size: 20px;
+
+}
+
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid green;
+    margin: 0 auto;
+}
+
+.menusection1 {
+    display: flex;
+    flex-direction: column;
+    // min-width: 300;
+    
+    @media (min-width: 850px) {
+        display:flex;
+        flex-flow: column wrap;
+        height: 50em;
+    }
+}
+.menusection2 {
+    display: flex;
+    flex-direction: column;
+    // min-width: 300;
+    
+    @media (min-width: 850px) {
+        display:flex;
+        flex-flow: column wrap;
+        height: 25em;
+    }
+}
+
+.menu-sub-section {
+    // display: flex;
+    // flex-direction: column;
+    // border: 1px solid red;
+    min-width: 300px;
+    max-width: 400px;
+        
+    
+    &__table{
+        width: 100%;
+        // max-width: 400px;
+        text-align: justify;
+    }
+}
