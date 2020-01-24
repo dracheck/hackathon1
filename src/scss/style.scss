@@ -1,0 +1,12 @@
+//for imports of other style sheets and variables
+$font-family:'Heebo';
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+$span-font-size: 1rem;
+$color: rgb(59, 59, 59);
+$bg_color: white;
+
+h1 {
+    font-family: $font-family;
+}
