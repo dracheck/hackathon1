@@ -9,7 +9,7 @@
 body {
     margin: 0;
     width: 100vw;
-    font-family: $font-family
+    font-family: $font-family;
 }
 
 main {
@@ -20,19 +20,19 @@ main {
     position: relative;
     h1 { 
         //change font size
-        font-size: 1.5rem;
+        font-size: $h1-font-size;
         text-transform: uppercase;
     }
     h2 {
-        font-size: 1rem;
+        font-size: $h2-font-size;
         text-transform: uppercase;
     }
     h3 {
-        font-size: .8rem;
+        font-size: $h3-font-size;
         text-transform: uppercase;
     }
     p {
-        font-size: .5rem;
+        font-size: $p-font-size;
     }
 
     .infocont {
@@ -41,6 +41,9 @@ main {
         @media (min-width: 450px) {
             flex-direction: row;
             justify-content: space-between;
+        }
+        &__box {
+            margin-left: 2%;
         }
     }
     img {
