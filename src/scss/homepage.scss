@@ -1,0 +1,67 @@
+@import 'style.scss';
+@import 'footer.scss';
+@import 'header.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    font-family: $font-family
+}
+
+main {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    h1 { 
+        //change font size
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: .5rem;
+    }
+
+    .infocont {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 450px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+        display: block;
+        z-index: 1;
+    }
+    .underlay {
+        height: 30px;
+        position: absolute;
+        background-color: $bg_footer;
+        width: 100vw;
+        margin-left: -10%;
+        margin-right: -10%;
+        top: 100%;
+        z-index: -1;
+        transform: translateX(-2%) translateY(-50%);
+        
+    }
+}
