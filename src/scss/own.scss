@@ -1,4 +1,6 @@
 @import 'style.scss';
+@import 'header.scss';
+@import 'footer.scss';
 
 .main {
     width: 80%;
@@ -76,4 +78,8 @@ p, .text {
 .underbottom {
     display: block;
     padding: 5%;
+}
+
+header a:nth-child(3) {
+    font-weight: 700;
 }

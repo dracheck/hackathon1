@@ -1,4 +1,6 @@
 @import 'style.scss';
+@import 'header.scss';
+@import 'footer.scss';
 
 * {
     box-sizing: border-box;
@@ -26,24 +28,29 @@ body {
 .menusection1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: left;
    
     @media (min-width: 750px) {
         display:flex;
         flex-flow: column wrap;
+        align-content: space-between;
         height: 45em;
     }
 }
 .menusection2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     text-align: left;
     // min-width: 300;
     
     @media (min-width: 750px) {
         display:flex;
         flex-flow: column wrap;
+        align-content: space-between;
         height: 20em;
     }
 }
@@ -54,7 +61,10 @@ body {
     // border: 1px solid red;
     // min-width: 300px;
     // max-width: 400px;
-    width: 45%;
+    width: 70%;
+    @media (min-width: 750px) {
+        width: 45%;
+    }
         
     
     &__table{
@@ -62,6 +72,10 @@ body {
         // max-width: 400px;
         text-align: justify;
     }
+}
+
+header a:nth-child(2) {
+    font-weight: 700;
 }
 
 

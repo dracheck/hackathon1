@@ -1,7 +1,7 @@
 @import 'style.scss';
 @import 'footer.scss';
 @import 'header.scss';
-@import 'menu.scss';
+// @import 'menu.scss';
 
 * {
     box-sizing: border-box;
@@ -68,4 +68,7 @@ main {
         transform: translateX(-2%) translateY(-50%);
         
     }
+}
+header a:first-child {
+    font-weight: 700;
 }
